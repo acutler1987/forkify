@@ -13,7 +13,6 @@ class RecipeView extends View {
   }
 
   _generateMarkup() {
-    console.log('**************************');
     return `
       <figure class="recipe__fig">
             <img src="${this._data.image}" alt="${
@@ -100,7 +99,6 @@ class RecipeView extends View {
   }
 
   _generateMarkupIngredient(ing) {
-    console.log('!!!!!!!!!!!!!!!!!!!');
     return `
         <li class="recipe__ingredient">
           <svg class="recipe__icon">
@@ -119,3 +117,4 @@ class RecipeView extends View {
 }
 
 export default new RecipeView();
+console.log('hello');
